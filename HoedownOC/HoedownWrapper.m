@@ -44,7 +44,7 @@ static const size_t kBufferUnit = 64;
     if ([self.markdownData length] == 0) {
         return nil;
     }
-    hoedown_renderer *renderer = hoedown_html_renderer_new(self.renderOptions, kNestingLevel);
+    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.renderOptions, kNestingLevel);
     renderer->listitem = hoedown_patch_render_listitem;
 //    renderer->blockcode = hoedown_patch_render_blockcode;
     NSString *output = render(renderer, self);

@@ -28,15 +28,9 @@ typedef NS_ENUM(NSUInteger, JKSMarkdownExtention) {
 
 typedef NS_ENUM(NSUInteger, JKSMarkdownRenderOption) {
     JKSMarkdownRenderOptionSkipHTML = HOEDOWN_HTML_SKIP_HTML,
-//    JKSMarkdownRenderOptionSkipStyle = HOEDOWN_HTML_SKIP_STYLE,
-//    JKSMarkdownRenderOptionSkipImages = HOEDOWN_HTML_SKIP_IMAGES,
-//    JKSMarkdownRenderOptionSkipLinks = HOEDOWN_HTML_SKIP_LINKS,
-//    JKSMarkdownRenderOptionExpandTabs = HOEDOWN_HTML_EXPAND_TABS,
-//    JKSMarkdownRenderOptionTableOfContents = HOEDOWN_HTML_TOC,
     JKSMarkdownRenderOptionEscape = HOEDOWN_HTML_ESCAPE,
     JKSMarkdownRenderOptionHardWrap = HOEDOWN_HTML_HARD_WRAP,
     JKSMarkdownRenderOptionUseXHTML = HOEDOWN_HTML_USE_XHTML,
-//    JKSMarkdownRenderOptionPrettify = HOEDOWN_HTML_PRETTIFY,
 };
 
 @interface HoedownWrapper : NSObject

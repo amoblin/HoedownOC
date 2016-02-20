@@ -5,14 +5,14 @@ Pod::Spec.new do |s|
   s.summary      = "hoedown Objective-C wrapper."
 
   s.description  = <<-DESC
-hoedown Objective-C wrapper.
+hoedown Objective-C wrapper, reference with CocoaHoedown and MacDown.
                    DESC
 
   s.homepage     = "https://github.com/amoblin/HoedownOC"
-  s.license      = "MIT"
+  s.license      = { :type => "Copyright", :text => "      Copyright 2016 marboo.io All rights reserved.\n" }
 
   s.author             = { "amoblin" => "amoblin@gmail.com" }
-  s.social_media_url   = "http://twitter.com/amoblin"
+  s.social_media_url   = "https://twitter.com/amoblin"
 
   s.source       = {
     :git => "https://github.com/amoblin/HoedownOC.git",
