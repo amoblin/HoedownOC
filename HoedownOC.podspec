@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
   s.name         = "HoedownOC"
   s.version      = "3.0.7.1"
-  s.summary      = "hoedown objective-c wrapper."
+  s.summary      = "hoedown Objective-C wrapper."
 
   s.description  = <<-DESC
-hoedown objective-c wrapper
+hoedown Objective-C wrapper.
                    DESC
 
   s.homepage     = "https://github.com/amoblin/HoedownOC"
