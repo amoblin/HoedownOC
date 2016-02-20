@@ -7,9 +7,9 @@
 //
 
 #include <string.h>
-#include "hoedown/escape.h"
-#include "hoedown/document.h"
-#include "hoedown/html.h"
+#include "escape.h"
+#include "document.h"
+#include "html.h"
 #include "hoedown_html_patch.h"
 
 #define USE_XHTML(opt) (opt->flags & HOEDOWN_HTML_USE_XHTML)

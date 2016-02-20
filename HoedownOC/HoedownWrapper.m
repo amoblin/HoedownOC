@@ -8,10 +8,6 @@
 
 #import "HoedownWrapper.h"
 #import "hoedown_html_patch.h"
-
-
-#include "document.h"
-#include "html.h"
 #include "buffer.h"
 
 #include <errno.h>
