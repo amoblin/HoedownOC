@@ -13,6 +13,10 @@
 		DA6AC9241C781A9900973977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC9221C781A9900973977 /* Main.storyboard */; };
 		DA6AC9261C781A9900973977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC9251C781A9900973977 /* Assets.xcassets */; };
 		DA6AC9291C781A9900973977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC9271C781A9900973977 /* LaunchScreen.storyboard */; };
+		DA6AC9381C781B8D00973977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9371C781B8D00973977 /* AppDelegate.m */; };
+		DA6AC93B1C781B8D00973977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC93A1C781B8D00973977 /* main.m */; };
+		DA6AC93D1C781B8D00973977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC93C1C781B8D00973977 /* Assets.xcassets */; };
+		DA6AC9401C781B8D00973977 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC93E1C781B8D00973977 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +30,24 @@
 		DA6AC9251C781A9900973977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA6AC9281C781A9900973977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA6AC92A1C781A9900973977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6AC9341C781B8D00973977 /* HoedownOSXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoedownOSXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6AC9361C781B8D00973977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA6AC9371C781B8D00973977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA6AC93A1C781B8D00973977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA6AC93C1C781B8D00973977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA6AC93F1C781B8D00973977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DA6AC9411C781B8D00973977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA6AC9131C781A9900973977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6AC9311C781B8D00973977 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6AC9181C781A9900973977 /* HoedownOCDemo */,
+				DA6AC9351C781B8D00973977 /* HoedownOSXDemo */,
 				DA6AC9171C781A9900973977 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6AC9161C781A9900973977 /* HoedownOCDemo.app */,
+				DA6AC9341C781B8D00973977 /* HoedownOSXDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +99,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA6AC9351C781B8D00973977 /* HoedownOSXDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AC9361C781B8D00973977 /* AppDelegate.h */,
+				DA6AC9371C781B8D00973977 /* AppDelegate.m */,
+				DA6AC93C1C781B8D00973977 /* Assets.xcassets */,
+				DA6AC93E1C781B8D00973977 /* MainMenu.xib */,
+				DA6AC9411C781B8D00973977 /* Info.plist */,
+				DA6AC9391C781B8D00973977 /* Supporting Files */,
+			);
+			path = HoedownOSXDemo;
+			sourceTree = "<group>";
+		};
+		DA6AC9391C781B8D00973977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AC93A1C781B8D00973977 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +140,23 @@
 			productReference = DA6AC9161C781A9900973977 /* HoedownOCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA6AC9331C781B8D00973977 /* HoedownOSXDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6AC9441C781B8D00973977 /* Build configuration list for PBXNativeTarget "HoedownOSXDemo" */;
+			buildPhases = (
+				DA6AC9301C781B8D00973977 /* Sources */,
+				DA6AC9311C781B8D00973977 /* Frameworks */,
+				DA6AC9321C781B8D00973977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoedownOSXDemo;
+			productName = HoedownOSXDemo;
+			productReference = DA6AC9341C781B8D00973977 /* HoedownOSXDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -109,6 +167,9 @@
 				ORGANIZATIONNAME = marboo;
 				TargetAttributes = {
 					DA6AC9151C781A9900973977 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DA6AC9331C781B8D00973977 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -127,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				DA6AC9151C781A9900973977 /* HoedownOCDemo */,
+				DA6AC9331C781B8D00973977 /* HoedownOSXDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +204,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA6AC9321C781B8D00973977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AC93D1C781B8D00973977 /* Assets.xcassets in Resources */,
+				DA6AC9401C781B8D00973977 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,6 +223,15 @@
 				DA6AC9211C781A9900973977 /* ViewController.m in Sources */,
 				DA6AC91E1C781A9900973977 /* AppDelegate.m in Sources */,
 				DA6AC91B1C781A9900973977 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6AC9301C781B8D00973977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6AC93B1C781B8D00973977 /* main.m in Sources */,
+				DA6AC9381C781B8D00973977 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +252,14 @@
 				DA6AC9281C781A9900973977 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA6AC93E1C781B8D00973977 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6AC93F1C781B8D00973977 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +369,36 @@
 			};
 			name = Release;
 		};
+		DA6AC9421C781B8D00973977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HoedownOSXDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.HoedownOSXDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA6AC9431C781B8D00973977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HoedownOSXDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.HoedownOSXDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +416,15 @@
 			buildConfigurations = (
 				DA6AC92E1C781A9900973977 /* Debug */,
 				DA6AC92F1C781A9900973977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6AC9441C781B8D00973977 /* Build configuration list for PBXNativeTarget "HoedownOSXDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6AC9421C781B8D00973977 /* Debug */,
+				DA6AC9431C781B8D00973977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

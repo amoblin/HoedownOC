@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>HoedownOSXDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DA6AC9151C781A9900973977</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA6AC9331C781B8D00973977</key>
 		<dict>
 			<key>primary</key>
 			<true/>
