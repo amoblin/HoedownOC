@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HoedownOCDemo.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [[[HoedownOCDemo alloc] init] test];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

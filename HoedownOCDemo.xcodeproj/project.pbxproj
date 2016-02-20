@@ -17,6 +17,30 @@
 		DA6AC93B1C781B8D00973977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC93A1C781B8D00973977 /* main.m */; };
 		DA6AC93D1C781B8D00973977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC93C1C781B8D00973977 /* Assets.xcassets */; };
 		DA6AC9401C781B8D00973977 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6AC93E1C781B8D00973977 /* MainMenu.xib */; };
+		DA6AC95D1C781CBC00973977 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9471C781CBC00973977 /* autolink.c */; };
+		DA6AC95E1C781CBC00973977 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9471C781CBC00973977 /* autolink.c */; };
+		DA6AC95F1C781CBC00973977 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9491C781CBC00973977 /* buffer.c */; };
+		DA6AC9601C781CBC00973977 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9491C781CBC00973977 /* buffer.c */; };
+		DA6AC9611C781CBC00973977 /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94B1C781CBC00973977 /* document.c */; };
+		DA6AC9621C781CBC00973977 /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94B1C781CBC00973977 /* document.c */; };
+		DA6AC9631C781CBC00973977 /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94D1C781CBC00973977 /* escape.c */; };
+		DA6AC9641C781CBC00973977 /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94D1C781CBC00973977 /* escape.c */; };
+		DA6AC9651C781CBC00973977 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94F1C781CBC00973977 /* html.c */; };
+		DA6AC9661C781CBC00973977 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC94F1C781CBC00973977 /* html.c */; };
+		DA6AC9671C781CBC00973977 /* html_blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9511C781CBC00973977 /* html_blocks.c */; };
+		DA6AC9681C781CBC00973977 /* html_blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9511C781CBC00973977 /* html_blocks.c */; };
+		DA6AC9691C781CBC00973977 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9521C781CBC00973977 /* html_smartypants.c */; };
+		DA6AC96A1C781CBC00973977 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9521C781CBC00973977 /* html_smartypants.c */; };
+		DA6AC96B1C781CBC00973977 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9531C781CBC00973977 /* stack.c */; };
+		DA6AC96C1C781CBC00973977 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9531C781CBC00973977 /* stack.c */; };
+		DA6AC96D1C781CBC00973977 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9551C781CBC00973977 /* version.c */; };
+		DA6AC96E1C781CBC00973977 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9551C781CBC00973977 /* version.c */; };
+		DA6AC96F1C781CBC00973977 /* hoedown_html_patch.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9571C781CBC00973977 /* hoedown_html_patch.c */; };
+		DA6AC9701C781CBC00973977 /* hoedown_html_patch.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9571C781CBC00973977 /* hoedown_html_patch.c */; };
+		DA6AC9711C781CBC00973977 /* HoedownWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC95A1C781CBC00973977 /* HoedownWrapper.m */; };
+		DA6AC9721C781CBC00973977 /* HoedownWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC95A1C781CBC00973977 /* HoedownWrapper.m */; };
+		DA6AC9771C7820FA00973977 /* HoedownOCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9761C7820FA00973977 /* HoedownOCDemo.m */; };
+		DA6AC9781C7820FA00973977 /* HoedownOCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC9761C7820FA00973977 /* HoedownOCDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +61,28 @@
 		DA6AC93C1C781B8D00973977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA6AC93F1C781B8D00973977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DA6AC9411C781B8D00973977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6AC9471C781CBC00973977 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		DA6AC9481C781CBC00973977 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		DA6AC9491C781CBC00973977 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		DA6AC94A1C781CBC00973977 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		DA6AC94B1C781CBC00973977 /* document.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = document.c; sourceTree = "<group>"; };
+		DA6AC94C1C781CBC00973977 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		DA6AC94D1C781CBC00973977 /* escape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = escape.c; sourceTree = "<group>"; };
+		DA6AC94E1C781CBC00973977 /* escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = escape.h; sourceTree = "<group>"; };
+		DA6AC94F1C781CBC00973977 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		DA6AC9501C781CBC00973977 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		DA6AC9511C781CBC00973977 /* html_blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html_blocks.c; sourceTree = "<group>"; };
+		DA6AC9521C781CBC00973977 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html_smartypants.c; sourceTree = "<group>"; };
+		DA6AC9531C781CBC00973977 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		DA6AC9541C781CBC00973977 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		DA6AC9551C781CBC00973977 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
+		DA6AC9561C781CBC00973977 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		DA6AC9571C781CBC00973977 /* hoedown_html_patch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hoedown_html_patch.c; sourceTree = "<group>"; };
+		DA6AC9581C781CBC00973977 /* hoedown_html_patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hoedown_html_patch.h; sourceTree = "<group>"; };
+		DA6AC9591C781CBC00973977 /* HoedownWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoedownWrapper.h; sourceTree = "<group>"; };
+		DA6AC95A1C781CBC00973977 /* HoedownWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoedownWrapper.m; sourceTree = "<group>"; };
+		DA6AC9751C7820FA00973977 /* HoedownOCDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoedownOCDemo.h; sourceTree = "<group>"; };
+		DA6AC9761C7820FA00973977 /* HoedownOCDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoedownOCDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +106,10 @@
 		DA6AC90D1C781A9900973977 = {
 			isa = PBXGroup;
 			children = (
+				DA6AC9451C781CBC00973977 /* HoedownOC */,
+				DA6AC9171C781A9900973977 /* Products */,
 				DA6AC9181C781A9900973977 /* HoedownOCDemo */,
 				DA6AC9351C781B8D00973977 /* HoedownOSXDemo */,
-				DA6AC9171C781A9900973977 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +134,8 @@
 				DA6AC9271C781A9900973977 /* LaunchScreen.storyboard */,
 				DA6AC92A1C781A9900973977 /* Info.plist */,
 				DA6AC9191C781A9900973977 /* Supporting Files */,
+				DA6AC9751C7820FA00973977 /* HoedownOCDemo.h */,
+				DA6AC9761C7820FA00973977 /* HoedownOCDemo.m */,
 			);
 			path = HoedownOCDemo;
 			sourceTree = "<group>";
@@ -118,6 +167,41 @@
 				DA6AC93A1C781B8D00973977 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA6AC9451C781CBC00973977 /* HoedownOC */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AC9461C781CBC00973977 /* hoedown */,
+				DA6AC9571C781CBC00973977 /* hoedown_html_patch.c */,
+				DA6AC9581C781CBC00973977 /* hoedown_html_patch.h */,
+				DA6AC9591C781CBC00973977 /* HoedownWrapper.h */,
+				DA6AC95A1C781CBC00973977 /* HoedownWrapper.m */,
+			);
+			path = HoedownOC;
+			sourceTree = "<group>";
+		};
+		DA6AC9461C781CBC00973977 /* hoedown */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AC9471C781CBC00973977 /* autolink.c */,
+				DA6AC9481C781CBC00973977 /* autolink.h */,
+				DA6AC9491C781CBC00973977 /* buffer.c */,
+				DA6AC94A1C781CBC00973977 /* buffer.h */,
+				DA6AC94B1C781CBC00973977 /* document.c */,
+				DA6AC94C1C781CBC00973977 /* document.h */,
+				DA6AC94D1C781CBC00973977 /* escape.c */,
+				DA6AC94E1C781CBC00973977 /* escape.h */,
+				DA6AC94F1C781CBC00973977 /* html.c */,
+				DA6AC9501C781CBC00973977 /* html.h */,
+				DA6AC9511C781CBC00973977 /* html_blocks.c */,
+				DA6AC9521C781CBC00973977 /* html_smartypants.c */,
+				DA6AC9531C781CBC00973977 /* stack.c */,
+				DA6AC9541C781CBC00973977 /* stack.h */,
+				DA6AC9551C781CBC00973977 /* version.c */,
+				DA6AC9561C781CBC00973977 /* version.h */,
+			);
+			path = hoedown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +306,19 @@
 			files = (
 				DA6AC9211C781A9900973977 /* ViewController.m in Sources */,
 				DA6AC91E1C781A9900973977 /* AppDelegate.m in Sources */,
+				DA6AC9711C781CBC00973977 /* HoedownWrapper.m in Sources */,
+				DA6AC9631C781CBC00973977 /* escape.c in Sources */,
+				DA6AC9671C781CBC00973977 /* html_blocks.c in Sources */,
+				DA6AC9771C7820FA00973977 /* HoedownOCDemo.m in Sources */,
+				DA6AC96F1C781CBC00973977 /* hoedown_html_patch.c in Sources */,
+				DA6AC96D1C781CBC00973977 /* version.c in Sources */,
+				DA6AC95D1C781CBC00973977 /* autolink.c in Sources */,
+				DA6AC9651C781CBC00973977 /* html.c in Sources */,
+				DA6AC95F1C781CBC00973977 /* buffer.c in Sources */,
+				DA6AC96B1C781CBC00973977 /* stack.c in Sources */,
+				DA6AC9611C781CBC00973977 /* document.c in Sources */,
 				DA6AC91B1C781A9900973977 /* main.m in Sources */,
+				DA6AC9691C781CBC00973977 /* html_smartypants.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +326,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6AC96C1C781CBC00973977 /* stack.c in Sources */,
+				DA6AC9781C7820FA00973977 /* HoedownOCDemo.m in Sources */,
+				DA6AC9681C781CBC00973977 /* html_blocks.c in Sources */,
+				DA6AC9721C781CBC00973977 /* HoedownWrapper.m in Sources */,
+				DA6AC9661C781CBC00973977 /* html.c in Sources */,
+				DA6AC9621C781CBC00973977 /* document.c in Sources */,
+				DA6AC96E1C781CBC00973977 /* version.c in Sources */,
 				DA6AC93B1C781B8D00973977 /* main.m in Sources */,
 				DA6AC9381C781B8D00973977 /* AppDelegate.m in Sources */,
+				DA6AC95E1C781CBC00973977 /* autolink.c in Sources */,
+				DA6AC9701C781CBC00973977 /* hoedown_html_patch.c in Sources */,
+				DA6AC96A1C781CBC00973977 /* html_smartypants.c in Sources */,
+				DA6AC9641C781CBC00973977 /* escape.c in Sources */,
+				DA6AC9601C781CBC00973977 /* buffer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
