@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "HoedownOC"
-  s.version      = "3.0.7.1"
+  s.version      = "3.0.7.2"
   s.summary      = "hoedown Objective-C wrapper."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ hoedown Objective-C wrapper, reference with CocoaHoedown and MacDown.
 
   s.source       = {
     :git => "https://github.com/amoblin/HoedownOC.git",
-    :tag => "3.0.7.1"
+    :tag => "3.0.7.2"
   }
 
   s.source_files  = "HoedownOC/**/*"
