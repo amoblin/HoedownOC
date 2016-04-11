@@ -50,7 +50,7 @@ static const size_t kBufferUnit = 64;
     if ([self.markdownData length] == 0) {
         return nil;
     }
-    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.renderOptions, kNestingLevel);
+    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.hoedownExtentions, kNestingLevel);
     renderer->listitem = hoedown_patch_render_listitem;
 //    renderer->blockcode = hoedown_patch_render_blockcode;
     NSString *output = render(renderer, self);
@@ -127,7 +127,7 @@ static const size_t kBufferUnit = 64;
 
 static inline NSString* render(const hoedown_renderer *renderer, HoedownWrapper *self)
 {
-    hoedown_document *markdown = hoedown_document_new(renderer, self.hoedownExtentions, kNestingLevel);
+    hoedown_document *document = hoedown_document_new(renderer, self.hoedownExtentions, kNestingLevel);
 
     hoedown_buffer *outputBuffer = hoedown_buffer_new(kBufferUnit);
     hoedown_buffer *sourceBuffer = hoedown_buffer_new(kBufferUnit);
@@ -138,10 +138,10 @@ static inline NSString* render(const hoedown_renderer *renderer, HoedownWrapper 
         hoedown_buffer_put(sourceBuffer, [self.markdownData bytes], [self.markdownData length]);
     }
 
-    hoedown_document_render(markdown, outputBuffer, sourceBuffer->data, sourceBuffer->size);
+    hoedown_document_render(document, outputBuffer, sourceBuffer->data, sourceBuffer->size);
     NSString *output = @(hoedown_buffer_cstr(outputBuffer));
 
-    hoedown_document_free(markdown);
+    hoedown_document_free(document);
     hoedown_buffer_free(outputBuffer);
 
     return output;

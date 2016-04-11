@@ -13,7 +13,7 @@
 
 - (void)test;
 {
-    HoedownWrapper *wrapper = [[HoedownWrapper alloc] initWithString:@"[Toc]\n# hello\n## world\n[TOC]"];
+    HoedownWrapper *wrapper = [[HoedownWrapper alloc] initWithString:@"[Toc]\n# hello\n## world\n[TOC]\n\n- [ ]a\n- [x]b"];
     wrapper.hoedownExtentions = HOEDOWN_EXT_MATH
                                 | HOEDOWN_EXT_MATH_EXPLICIT
                                 | HOEDOWN_EXT_FOOTNOTES
