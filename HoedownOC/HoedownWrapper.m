@@ -39,7 +39,13 @@ static const size_t kBufferUnit = 64;
     return [self initWithData:[string dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
-- (NSString *)HTML
+- (NSString *)HTML;
+{
+    NSString *html = [self bodyHTML];
+    return [html stringByReplacingOccurrencesOfString:@"[TOC]" withString:[self tableOfContentsHTML] options:NSCaseInsensitiveSearch range:[html rangeOfString:@"[TOC]" options:NSCaseInsensitiveSearch]];
+}
+
+- (NSString *)bodyHTML;
 {
     if ([self.markdownData length] == 0) {
         return nil;
@@ -53,8 +59,7 @@ static const size_t kBufferUnit = 64;
     return output;
 }
 
-
-- (NSString *)tableOfContentsHTML
+- (NSString *)tableOfContentsHTML;
 {
     if ([self.markdownData length] == 0) {
         return nil;

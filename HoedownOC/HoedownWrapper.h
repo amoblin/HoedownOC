@@ -53,4 +53,5 @@ typedef NS_ENUM(NSUInteger, JKSMarkdownRenderOption) {
 
 - (instancetype)initWithString:(NSString *)string;
 - (NSString *)HTML;
+- (NSString *)tableOfContentsHTML;
 @end
