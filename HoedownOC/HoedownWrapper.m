@@ -42,7 +42,11 @@ static const size_t kBufferUnit = 64;
 - (NSString *)HTML;
 {
     NSString *html = [self bodyHTML];
-    return [html stringByReplacingOccurrencesOfString:@"[TOC]" withString:[self tableOfContentsHTML] options:NSCaseInsensitiveSearch range:[html rangeOfString:@"[TOC]" options:NSCaseInsensitiveSearch]];
+    NSRange range = [html rangeOfString:@"[TOC]" options:NSCaseInsensitiveSearch];
+    if (range.location == NSNotFound) {
+        return html;
+    }
+    return [html stringByReplacingOccurrencesOfString:@"[TOC]" withString:[self tableOfContentsHTML] options:NSCaseInsensitiveSearch range:range];
 }
 
 - (NSString *)bodyHTML;
@@ -50,7 +54,7 @@ static const size_t kBufferUnit = 64;
     if ([self.markdownData length] == 0) {
         return nil;
     }
-    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.hoedownExtentions, kNestingLevel);
+    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.renderOptions, kNestingLevel);
     renderer->listitem = hoedown_patch_render_listitem;
 //    renderer->blockcode = hoedown_patch_render_blockcode;
     NSString *output = render(renderer, self);
